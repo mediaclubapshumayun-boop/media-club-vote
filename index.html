@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media Club — Vote</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Vote</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Media Club — Vote</h1>
-    <a class="admin-link" href="admin.html">Admin</a>
-</header>
+    <div class="top-header">
+        <div class="badge">📊 Media Club Elections • 2025</div>
+        <h1>Register to Vote</h1>
+        <p>Enter your info and select your <strong>Club</strong>. After saving, proceed to the voting page.<br>
+        Votes will be <strong>anonymous</strong> (no personal data stored with votes).</p>
+    </div>
 
-<section class="vote-container">
-    <h2>Student Council — Vote Now</h2>
-    <p>Select one nominee per category. Your choices will be saved locally.</p>
+    <div class="form-card">
+        <div class="field-row">
+            <label>Full name</label>
+            <input id="name" type="text" placeholder="Enter your name">
+        </div>
 
-    <div id="categories"></div>
+        <div class="grid">
+            <div>
+                <label>Class</label>
+                <select id="class">
+                    <option>6</option><option>7</option><option>8</option>
+                    <option>9</option><option selected>10</option>
+                    <option>11</option><option>12</option>
+                </select>
+            </div>
 
-    <button id="submitVote">Submit Vote</button>
-</section>
+            <div>
+                <label>Section</label>
+                <select id="section">
+                    <option>A</option>
+                    <option selected>B</option>
+                    <option>C</option>
+                </select>
+            </div>
 
-<footer>
-    <p>Made with ❤️ — Demo voting site</p>
-</footer>
+            <div>
+                <label>House</label>
+                <select id="house">
+                    <option>Unity</option>
+                    <option>Faith</option>
+                    <option>Vision</option>
+                    <option>Honor</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Club</label>
+                <select id="club">
+                    <option>Audio/Visual</option>
+                    <option>Photography</option>
+                    <option>Journalism</option>
+                    <option>Graphics</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="save-btn" onclick="saveData()">Save</button>
+            <a href="vote.html" class="proceed-btn">Proceed to Voting →</a>
+            <span id="saved-badge" class="saved">Saved</span>
+        </div>
+
+        <p class="note">Fields are editable at any time. Your votes remain anonymous and locked per device.</p>
+    </div>
+
+    <footer>
+        <h2>“Your Vote, Your Voice — Make It Count!”</h2>
+        <p>Made by Media Club • Senior Wing</p>
+    </footer>
 
 <script src="script.js"></script>
 </body>
