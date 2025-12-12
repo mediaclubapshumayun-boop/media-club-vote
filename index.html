@@ -1,46 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Media Club Voting</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Club — Vote</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container">
-      <h1 class="logo">Media Club — Vote</h1>
-      <a class="admin-link" href="admin.html">Admin</a>
-    </div>
-  </header>
 
-  <main class="container main">
-    <section class="card vote-card">
-      <h2 class="page-title">Student Council — Vote Now</h2>
-      <p class="muted">Select one nominee per category. Your choices will be saved locally.</p>
+<header>
+    <h1>Media Club — Vote</h1>
+    <a class="admin-link" href="admin.html">Admin</a>
+</header>
 
-      <form id="voteForm">
-        <div id="categories" class="categories">
-          <!-- categories populated by JS -->
-        </div>
+<section class="vote-container">
+    <h2>Student Council — Vote Now</h2>
+    <p>Select one nominee per category. Your choices will be saved locally.</p>
 
-        <div class="actions">
-          <button id="submitBtn" class="btn primary" type="button">Submit Vote</button>
-        </div>
-      </form>
-    </section>
+    <div id="categories"></div>
 
-    <section id="thankYou" class="card thankyou" hidden>
-      <h3>Thank you — your vote has been recorded!</h3>
-      <p class="muted">You can change your vote by clearing local storage or voting again on this device.</p>
-      <button id="newVote" class="btn">Vote again</button>
-    </section>
-  </main>
+    <button id="submitVote">Submit Vote</button>
+</section>
 
-  <footer class="footer">
-    <div class="container">Made with ❤️ — Demo voting site</div>
-  </footer>
+<footer>
+    <p>Made with ❤️ — Demo voting site</p>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
