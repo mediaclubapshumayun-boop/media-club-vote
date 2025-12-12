@@ -1,60 +1,123 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Georgia", serif;
-}
-
 body {
-    background: #fafafa;
-    padding: 20px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: url("https://miro.medium.com/1*_f6wcIxwnEUlRyz7Ez3xRw.jpeg") no-repeat center/cover;
+    backdrop-filter: blur(20px);
+    color: white;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.top-header {
+    text-align: center;
+    margin-top: 60px;
+    background: rgba(0,0,0,0.45);
+    padding: 40px;
+    border-radius: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badge {
+    display: inline-block;
+    background: white;
+    color: #333;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin: 0;
 }
 
-.admin-link {
-    font-size: 18px;
-    text-decoration: none;
-    color: blue;
+p {
+    font-size: 15px;
+    opacity: 0.9;
 }
 
-.vote-container {
+.form-card {
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.field-row {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.buttons {
     margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-#categories {
-    margin-top: 20px;
-}
-
-.category {
-    margin-bottom: 20px;
-}
-
-.category h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 8px 16px;
+.save-btn {
+    padding: 12px 25px;
+    border: none;
+    background: #6b5bff;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
     cursor: pointer;
 }
 
+.proceed-btn {
+    padding: 12px 25px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.saved {
+    background: rgba(255,255,255,0.5);
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #004400;
+    font-weight: bold;
+    display: none;
+}
+
+.note {
+    font-size: 13px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
 footer {
-    margin-top: 40px;
-    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 120px;
+}
+
+footer h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
 }
