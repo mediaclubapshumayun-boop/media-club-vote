@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container top-inner">
+      <div class="brand">
+        <div class="logo-pill">📊</div>
+        <div>
+          <div class="subtitle">Media Club Election Results</div>
+          <h1 class="brand-title">Admin Dashboard</h1>
+        </div>
+      </div>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="pwBox" class="card pw-card">
+      <h2>Enter Admin Password</h2>
+      <input id="pwInput" type="password" placeholder="Password" />
+      <div class="actions">
+        <button id="pwBtn" class="btn primary">Enter</button>
+      </div>
+      <p class="muted small">Default password: <strong>admin123</strong></p>
+    </div>
+
+    <section id="adminPanel" class="card admin-panel" hidden>
+      <div class="admin-actions">
+        <button id="exportBtn" class="btn primary">Export Excel (.xlsx)</button>
+        <button id="clearVotes" class="btn danger">Reset All Votes</button>
+      </div>
+
+      <h3>Stored Votes</h3>
+      <div class="table-wrap">
+        <table id="votesTable">
+          <thead id="votesThead"></thead>
+          <tbody id="votesTbody"></tbody>
+        </table>
+      </div>
+
+      <h3>Summary</h3>
+      <div id="summaryWrap"></div>
+
+      <p class="muted small">Exported file will be named <strong>results.xlsx</strong>. Charts are embedded as images.</p>
+    </section>
+  </main>
+
+  <!-- libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-populate/1.21.1/xlsx-populate.min.js"></script>
+
+  <script src="admin.js"></script>
+</body>
+</html>
