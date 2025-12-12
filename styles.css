@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body {
+    background: #fafafa;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.admin-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: blue;
+}
+
+.vote-container {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#categories {
+    margin-top: 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 16px;
+}
